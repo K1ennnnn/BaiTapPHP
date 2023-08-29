@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./bootstrap5/css/bootstrap.min.css">
+    <script src="./bootstrap5/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Profile</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Carousel -->
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <form class="row g-3 needs-validation pt-5" novalidate>
+                    <div class="col-md-4 position-relative">
+                        <label for="validationTooltip01" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="validationTooltip01" value="" required>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4 position-relative">
+                        <label for="validationTooltip02" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="validationTooltip02" value="" required>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4 position-relative">
+                        <label for="validationTooltipUsername" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                            <input type="text" class="form-control" id="validationTooltipUsername"
+                                aria-describedby="validationTooltipUsernamePrepend" required>
+                            <div class="invalid-tooltip">
+                                Please choose a unique and valid username.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 position-relative">
+                        <label for="validationTooltip03" class="form-label">City</label>
+                        <input type="text" class="form-control" id="validationTooltip03" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-3 position-relative">
+                        <label for="validationTooltip04" class="form-label">State</label>
+                        <select class="form-select" id="validationTooltip04" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>Hà Nội</option>
+                            <option>Thái Bình</option>
+                            <option>Thái Nguyên</option>
+                            <option>Bắc Ninh</option>
+                        </select>
+                        <div class="invalid-tooltip">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col-md-3 position-relative">
+                        <label for="validationTooltip05" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="validationTooltip05" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </div>
+                </form>
+            </div>
+</body>
+
+</html>
